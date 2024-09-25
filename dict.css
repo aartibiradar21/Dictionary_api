@@ -67,3 +67,13 @@ body {
    color:#575a7b;
    font-style: italics;
 }
+@media (max-width: 768px) {
+    .container {
+       width: 80%;
+       padding: 40px 20px;
+    }
+ 
+    .search-box button {
+       font-size: 14px;
+    }
+ }
