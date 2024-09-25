@@ -42,7 +42,9 @@ btn.addEventListener("click", () => {
     }
     result.innerHTML = '<p>Loading...</p>';
 
+    // fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${input}`)
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${input}`)
+
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Word not found');
